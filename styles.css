@@ -1,0 +1,80 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('background.jpg') no-repeat center center fixed; /* Add your background image here */
+    background-size: cover;
+    color: #fff;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+section.place {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin: 1rem;
+    overflow: hidden;
+    width: calc(100% - 2rem);
+    max-width: 300px;
+}
+
+section.place img {
+    width: 100%;
+    height: auto;
+}
+
+.description {
+    padding: 1rem;
+    color: #000;
+}
+
+.description h2 {
+    margin-top: 0;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (min-width: 600px) {
+    section.place {
+        width: calc(50% - 2rem);
+    }
+}
+
+@media (min-width: 900px) {
+    section.place {
+        width: calc(33.333% - 2rem);
+    }
+}
+
+
+.center-text {
+    text-align: center;
+}
